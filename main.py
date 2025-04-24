@@ -29,7 +29,8 @@ if __name__ == '__main__':
     class_config = config.ClassConfig(llm_class=sampler.LocalLLM, sandbox_class=evaluator.LocalSandbox)
     config = config.Config(use_api = args.use_api, 
                            api_model = args.api_model,)
-    global_max_sample_num = 10000 
+    #global_max_sample_num = 10000 
+    global_max_sample_num = 100
 
     # Load prompt specification
     with open(
